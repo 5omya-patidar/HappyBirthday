@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Greeting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffe5b4;
+            font-family: 'Dosis', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            max-width: 80%;
+            overflow: hidden;
+        }
+        .image {
+            transform: rotate(-10deg);
+            width: 70%;
+            height: auto;
+        }
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-10deg);
+            color: #000;
+            font-size: 24px; /* Adjusted font size */
+            font-weight: bold;
+            width: 80%;
+            white-space: pre-wrap;
+        }
+        audio {
+            display: none; /* Hide the audio player */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="page.png" alt="Birthday Image" class="image">
+        <div class="text">
+            Happiest Birthday To Meri Family,<br>
+            Meri Bestest Friend,<br>
+            Partner In Kalesh,<br>
+            And World's Most Beautiful Meri Pglu,<br>
+            I Always Prey to God<br>
+            All your Wishes Come True<br>
+            OR me Hmesa Ese Hi Teco Tang Krta Rahu❤️🫂
+        </div>
+        <audio id="birthdayAudio" autoplay>
+            <source src="bdays.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            var audio = document.getElementById('birthdayAudio');
+            audio.play();
+        });
+    </script>
+</body>
+</html>
